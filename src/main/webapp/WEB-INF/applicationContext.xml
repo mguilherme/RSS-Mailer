@@ -12,5 +12,7 @@
 
 	<!-- Enables Scheduling tasks -->
 	<task:annotation-driven />
+	
+	<import resource="springMailConfiguration.xml" />
 
 </beans>
