@@ -23,12 +23,12 @@
 
 	<bean id="alertMailMessage" class="org.springframework.mail.SimpleMailMessage">
 		<property name="from">
-			<value>myusername@gmail.com</value>
+			<value>from@gmail.com</value>
 		</property>
 		<property name="to">
-			<value>myusername@gmail.com</value>
+			<value>to@gmail.com</value>
 		</property>
-		<property name="subject" value="Alert - Exception occurred. Please investigate" />
+		<property name="subject" value="Motivational Quote" />
 	</bean>
 
 </beans>

@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.guilherme.miguel.rssmailer.model.FeedItem;
+import com.guilherme.miguel.rssmailer.service.MailService;
 import com.guilherme.miguel.rssmailer.service.RssService;
 
 /**
@@ -22,6 +23,9 @@ public class TaskImpl implements Task {
 	@Autowired
 	private RssService rssService;
 	
+	@Autowired
+	private MailService mailService;
+	
 	@Scheduled(cron = "${refresh.rate}")
 	public void runJob() {
 		// TODO: Create a Service to retrieve RSS
@@ -29,7 +33,9 @@ public class TaskImpl implements Task {
 		
 		if(feedItem != null) {
 			log.info("Description" + feedItem.getDescription());
-			log.info("Author" + feedItem.getAuthor());
+			mailService.sendAlertMail(feedItem.getDescription());
+//			log.info("Author" + feedItem.getAuthor());
+			
 		}
 		
 	}
