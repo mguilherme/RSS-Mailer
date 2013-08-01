@@ -7,8 +7,9 @@
 
 	<context:property-placeholder
 		ignore-resource-not-found="true"
-		location="file:../conf/rss.mailer-conf.properties,
-		classpath*:rss.mailer-conf.properties" />
+		location="classpath*:rss.mailer-conf.properties,
+		file:../conf/rss.mailer-conf.properties,
+		file:${user.home}/.rss.mailer/rss.mailer-conf.properties" />
 
 	<!-- Spring Auto Scan Components -->
 	<context:component-scan base-package="com.guilherme.miguel.rssmailer" />
