@@ -7,19 +7,6 @@
 	<packaging>war</packaging>
 	<name>RSS Mailer</name>
 
-	<developers>
-		<developer>
-			<id>mguilherme</id>
-			<name>Miguel Guilherme</name>
-			<url>https://github.com/mguilherme</url>
-			<timezone>0</timezone>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-		</developer>
-	</developers>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
@@ -41,6 +28,16 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.1.11.v20130520</version>
+				<configuration>
+					<webAppSourceDirectory>${basedir}/src/main/webapp</webAppSourceDirectory>
+					<stopPort>8080</stopPort>
+					<stopKey>c</stopKey>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -126,5 +123,18 @@
 		</dependency>
 
 	</dependencies>
+
+	<developers>
+		<developer>
+			<id>mguilherme</id>
+			<name>Miguel Guilherme</name>
+			<url>https://github.com/mguilherme</url>
+			<timezone>0</timezone>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
 
 </project>
