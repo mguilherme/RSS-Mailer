@@ -6,15 +6,15 @@ Right now it is modular enough to choose the RSS Feed URL and a cron where you c
 
 Major Versions used:
 
-> Spring 3.2.3  
-> Rome 1.0.0
+* Spring 3.2.3 (http://www.springsource.org/spring-framework)
+* Rome 1.0.0 (https://rometools.jira.com/wiki/display/ROME/Home)
 
 Build, Run:
 
-1. mvn clean install
-2. mvn jetty:run
+1. `$ mvn clean install`
+2. `$ mvn jetty:run`
 
 ## Configuration
 - rss.mailer.conf should be placed in conf/ folder of tomcat or .rss.mailer/ in user home.
 - Properties are self explanatory, just fill the url, refresh rate and mail configurations.
-- Righ now you need to configure "from" and "to" inside src/main/webapp/WEB-INF/springMailConfiguration.xml
+- Righ now you need to configure "from" and "to" inside `src/main/webapp/WEB-INF/springMailConfiguration.xml`
