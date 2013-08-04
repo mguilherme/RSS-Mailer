@@ -16,5 +16,5 @@ Build, Run:
 
 ## Configuration
 - rss.mailer.conf should be placed in conf/ folder of tomcat or .rss.mailer/ in user home.
-- Properties are self explanatory just fill the url, refresh rate and mail configurations.
+- Properties are self explanatory, just fill the url, refresh rate and mail configurations.
 - Righ now you need to configure "from" and "to" inside src/main/webapp/WEB-INF/springMailConfiguration.xml
