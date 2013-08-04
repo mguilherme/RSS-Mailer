@@ -8,6 +8,11 @@ Major Versions used:
 
 * Spring 3.2.3 (http://www.springsource.org/spring-framework)
 * Rome 1.0.0 (https://rometools.jira.com/wiki/display/ROME/Home)
+* Java Mail 1.4.7 (http://www.oracle.com/technetwork/java/javamail/index.html)
+* Commons Lang 3.1 (http://commons.apache.org/proper/commons-lang/)
+* SLF4J 1.7.5 (http://www.slf4j.org/)
+* Logback 1.0.13 (http://logback.qos.ch/)
+* JUnit 4.11 (http://junit.org/)
 
 Build, Run:
 
